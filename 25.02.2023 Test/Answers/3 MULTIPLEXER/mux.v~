@@ -1,0 +1,9 @@
+module mux(
+	input a,c,sel,
+	output b);
+reg [1:0] sel;
+if(sel)
+	b=a;
+else
+	b=c;
+endmodule
